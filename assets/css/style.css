@@ -61,12 +61,18 @@ a:hover{
     background-color: #d8eefe;
 }
 
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+}
+
 .footer{
     grid-area: footer;
     background-color: #3da9fc;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 2%;
 }
 
 .logo {
@@ -150,7 +156,8 @@ a:hover{
 
     .section1{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-areas: auto auto;
+        grid-template-columns: 50% 50%;
     }
 
     .aside{
@@ -162,6 +169,10 @@ a:hover{
         display: none !important;
     }
 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
